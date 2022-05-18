@@ -1,13 +1,23 @@
 package Package;
 
 public class Third {
-    int pc;
-    int laptop;
-    int phone;
+    int engine;
+    int occasion;
+    int capacity;
+    public Third(int engine, int occasion, int capacity){
+        this.engine = engine;
+        this.occasion = occasion;
+        this.capacity = capacity;
+    }
 
-    Third(int pc, int laptop, int phone){
-        this.pc = pc;
-        this.laptop = laptop;
-        this.phone = phone;
+    double technical() {
+        double d;
+        d = engine + capacity;
+        return d;
+    }
+
+    void tech() {
+        double t = 3 * (occasion + capacity);
+        System.out.println(t);
     }
 }
