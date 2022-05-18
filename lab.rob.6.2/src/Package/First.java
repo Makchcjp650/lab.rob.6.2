@@ -5,15 +5,15 @@ public class First {
     double two;
     double three;
 //використання конструктора
-    First(double one, double two, double three) {
+    public First(double one, double two, double three) {
         this.one = one;
         this.two = two;
         this.three = three;
     }
-    First(double en1) {
+    public First(double en1) {
         one = en1;
     }
-    First(First engn) {
+    public First(First engn) {
         one = engn.one;
         two = engn.two;
         three = engn.three;
